@@ -1,0 +1,39 @@
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header'
+    'mid mid mid'
+    'bott bott bott';
+}
+
+body { 
+    background-image: url(lion-3.jpg)
+}
+h1 {
+    color: brown;
+    background-color: burlywood;
+}
+.item1 {
+
+    grid-area:header;
+    background-color:darkred;
+    padding: 10px;
+    border: 2px darkorange;
+    margin: 10px;
+}
+.item2 {
+ 
+    grid-area:mid;
+    background-color:gold;
+    padding: 10px;
+    border: 2px darkorange;
+    margin: 10px;
+ }
+ .item3 {
+ 
+    grid-area: bott;
+    background-color:limegreen;
+    padding: 10px;
+    border: 2px darkorange;
+    margin: 10px;
+ }
