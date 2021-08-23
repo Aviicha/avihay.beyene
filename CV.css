@@ -5,9 +5,10 @@
     'mid mid mid'
     'bott bott bott';
 }
-
+ 
 body { 
     background-image: url(lion-3.jpg)
+    
 }
 h1 {
     color: brown;
@@ -20,14 +21,20 @@ h1 {
     padding: 10px;
     border: 2px darkorange;
     margin: 10px;
+    animation-name: fadeRed;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .item2 {
- 
+    
     grid-area:mid;
     background-color:gold;
     padding: 10px;
     border: 2px darkorange;
     margin: 10px;
+    animation-name: fadeYellow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
  }
  .item3 {
  
@@ -36,4 +43,26 @@ h1 {
     padding: 10px;
     border: 2px darkorange;
     margin: 10px;
+    animation-name: fadeGreen;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+ @keyframes fadeRed {
+    0% {background-color: rgb(210, 51, 30);}
+     50% {background-color: rgb(220, 93, 20);}
+     100% {background-color: rgb(210, 30, 30);}
+     
+ }
+
+ @keyframes fadeGreen {
+    0% {background-color: rgb(51, 210, 30);}
+     50% {background-color: rgb(20, 220, 170);}
+     100% {background-color: rgb(30, 210, 30);}
+ }
+ 
+ @keyframes fadeYellow {
+    0% {background-color: rgb(198, 210, 30);}
+     50% {background-color: rgb(220, 157, 20);}
+     100% {background-color: rgb(183, 210, 30);}
  }
